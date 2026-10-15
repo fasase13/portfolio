@@ -132,11 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theme === 'dark') {
       htmlElement.setAttribute('data-theme', 'dark');
       if (themeIcon) themeIcon.className = 'fa-regular fa-sun';
-      if (themeLabel) themeLabel.textContent = 'Light';
+      if (themeToggleBtn) {
+        themeToggleBtn.setAttribute('title', 'Switch to light theme');
+        themeToggleBtn.setAttribute('aria-label', 'Switch to light theme');
+      }
     } else {
       htmlElement.removeAttribute('data-theme');
       if (themeIcon) themeIcon.className = 'fa-regular fa-moon';
-      if (themeLabel) themeLabel.textContent = 'Dark';
+      if (themeToggleBtn) {
+        themeToggleBtn.setAttribute('title', 'Switch to dark theme');
+        themeToggleBtn.setAttribute('aria-label', 'Switch to dark theme');
+      }
     }
     localStorage.setItem('portfolio-theme', theme);
   }
