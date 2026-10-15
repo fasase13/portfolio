@@ -231,7 +231,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: 63% 26%;
   display: block;
 }
 
@@ -643,6 +643,7 @@ button {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 62% 28%;
   border: 4px solid var(--bg-card);
   background-color: var(--bg-card);
   display: block;
@@ -1761,7 +1762,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 62% 28%;
   display: block;
   transition: transform 0.4s var(--ease-spring);
 }
