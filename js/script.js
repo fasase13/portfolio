@@ -167,9 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroTypewriterEl = document.getElementById('hero-typewriter');
   const heroRoles = [
     'Web Author & Developer',
-    'Capstone Project Leader',
-    'Information Systems Professional',
-    'Process & Systems Documentation Analyst'
+    'Systems Analyst',
+    'BSIS Student at CHMSU',
+    'Technical Documentation Specialist'
   ];
   let roleIndex = 0;
   let textIndex = 0;
@@ -402,22 +402,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const triggerWashqueueModal = document.getElementById('trigger-washqueue-modal');
 
   const washqueueData = {
-    title: 'WASHQUEUE: A MOBILE-BASED QUEUING AND SCHEDULING APPLICATION FOR CAR WASH BUSINESSES',
-    category: 'Project Leader: Francis Angelo S. Sase • BS Information Systems (CHMSU)',
+    title: 'WashQueue: Smart Queuing & Scheduling',
+    category: 'BS Information Systems • CHMSU Capstone',
     image: 'assets/washqueue_icon.png',
     liveUrl: 'https://www.washqueue.online/',
-    description: 'WashQueue is a production-grade mobile and web-based queuing and scheduling application engineered to solve the problem of physical waiting lines in car wash establishments. As Project Leader, Francis Angelo S. Sase spearheaded project direction, research methodology, agile milestone tracking, systems analysis, queue logic modeling, UI/UX architecture, technical documentation, and final deployment. Features include a vendor management dashboard, Google authentication bridge, virtual queuing engine, and progressive web app (PWA) architecture.',
+    description: 'WashQueue is a production web and mobile application that eliminates physical wait lines at car wash establishments. It features remote virtual queue entry, real-time status tracking, service bay scheduling, an operator dashboard, and Google authentication.',
     tags: [
-      '👑 Project Leader',
-      'Capstone Project',
+      '👑 Project Lead',
+      'CHMSU Capstone',
       'Flutter Web & Mobile',
-      'PWA (Progressive Web App)',
-      'Virtual Queuing Engine',
-      'Bay & Slot Scheduling',
+      'Progressive Web App (PWA)',
+      'Virtual Queuing',
+      'Bay Scheduling',
       'Google Auth Bridge',
-      'Geolocation Services',
-      'Real-Time Cloud DB',
-      'Live at washqueue.online'
+      'Geolocation',
+      'Real-Time Cloud DB'
     ]
   };
 
@@ -476,23 +475,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const certificatesData = [
     {
       title: 'Database Security',
-      issuer: 'Cybrary • Continuing Education Completion',
+      issuer: 'Cybrary • Continuing Education',
       category: 'Database Security & Access Governance',
-      status: 'Verified (1 CEU/CPE)',
-      date: 'May 29, 2025 (6:31 AM UTC)',
+      status: 'Verified (1 CEU)',
+      date: 'May 29, 2025',
       certNumber: 'CC-2e200e90-f092-448d-918b-06d26850c702',
-      description: 'Successfully completed the 1 CEU/CPE and 1 hour specialized training course in Database Security provided by Cybrary. Topics covered include relational database access control, SQL injection mitigation, privilege separation, data-at-rest encryption, and database audit logging.',
+      description: 'Completed training in Database Security covering SQL injection defense, access control, privilege separation, data encryption, and audit logging.',
       image: 'assets/certificates/database-security-cybrary.png',
       pdf: 'assets/certificates/database-security-cybrary.pdf'
     },
     {
       title: 'IT Fundamentals: Security',
-      issuer: 'Cybrary • Continuing Education Completion',
-      category: 'IT Systems Security & Defense Fundamentals',
-      status: 'Verified (3 CEUs/CPEs)',
-      date: 'June 4, 2025 (4:45 PM UTC)',
+      issuer: 'Cybrary • Continuing Education',
+      category: 'IT Security & Defense Fundamentals',
+      status: 'Verified (3 CEUs)',
+      date: 'June 4, 2025',
       certNumber: 'CC-5476a453-7258-48ea-ac0e-fa83b0b728c7',
-      description: 'Successfully completed the 3 CEUs/CPEs and 2 hours training course in IT Fundamentals: Security provided by Cybrary. Covers fundamental security models, network defenses, threat identification, host security, and enterprise cybersecurity hygiene.',
+      description: 'Completed training in IT Fundamentals: Security covering fundamental security models, network defenses, threat identification, and host protection.',
       image: 'assets/certificates/it-fundamentals-security-cybrary.png',
       pdf: 'assets/certificates/it-fundamentals-security-cybrary.pdf'
     },
@@ -502,30 +501,30 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'Artificial Intelligence & Ethics',
       status: 'Verified Credential',
       date: 'October 28, 2025',
-      certNumber: 'Official Declaration of Completion',
-      description: 'Awarded by Simplilearn SkillUP and powered by Google Cloud for demonstrating initiative and commitment to responsible artificial intelligence. Demonstrates competencies in applying AI principles, human-centric evaluation, bias mitigation, fairness, and safety practices.',
+      certNumber: 'Declaration of Completion',
+      description: 'Completed Google Cloud course on Responsible AI, covering ethical principles, human-centric evaluation, bias mitigation, and safety practices.',
       image: 'assets/certificates/responsible-ai-google-cloud.png',
       pdf: null
     },
     {
       title: 'Introduction to Modern AI',
       issuer: 'Cisco • DICT-ITU DTC Initiative',
-      category: 'Modern Artificial Intelligence & Machine Learning',
+      category: 'Artificial Intelligence & Machine Learning',
       status: 'Verified Credential',
       date: 'November 09, 2025',
-      certNumber: 'DICT-ITU DTC Initiative • Digital Transformation Center',
-      description: 'Awarded by the DICT-ITU DTC Initiative through the Cisco Networking Academy program for successfully completing Introduction to Modern AI. Validates foundational understanding of modern artificial intelligence paradigms, algorithms, practical applications, and societal impact.',
+      certNumber: 'DICT-ITU DTC Initiative',
+      description: 'Completed Cisco Networking Academy course on Modern AI, covering core AI paradigms, machine learning concepts, algorithms, and practical applications.',
       image: 'assets/certificates/intro-modern-ai-cisco.png',
       pdf: 'assets/certificates/intro-modern-ai-cisco.pdf'
     },
     {
       title: 'Introduction to Cybersecurity',
       issuer: 'Cisco • DICT-ITU DTC Initiative',
-      category: 'Cybersecurity Principles & Threat Landscape',
+      category: 'Cybersecurity Principles & Threat Defense',
       status: 'Verified Credential',
       date: 'November 16, 2025',
-      certNumber: 'DICT-ITU DTC Initiative • Digital Transformation Center',
-      description: 'Awarded by the DICT-ITU DTC Initiative through the Cisco Networking Academy program for successfully completing Introduction to Cybersecurity. Covers fundamental principles of cybersecurity, common attack vectors, confidentiality-integrity-availability (CIA) triads, and protective measures.',
+      certNumber: 'DICT-ITU DTC Initiative',
+      description: 'Completed Cisco Networking Academy course on Cybersecurity, covering cyber defense principles, threat landscapes, CIA triads, and system countermeasures.',
       image: 'assets/certificates/intro-cybersecurity-cisco.png',
       pdf: 'assets/certificates/intro-cybersecurity-cisco.pdf'
     }
