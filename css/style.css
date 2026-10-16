@@ -2479,38 +2479,179 @@ button {
 .site-footer {
   border-top: 1px solid var(--divider-subtle);
   background-color: var(--bg-card);
-  padding: 32px 24px;
+  padding: 56px 24px 32px 24px;
   margin-top: auto;
   transition: var(--transition-theme);
 }
 
-.footer-content {
+.footer-container {
   max-width: 1140px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.25fr;
+  gap: 48px;
+}
+
+/* Column 1: Brand & Profile Bio */
+.footer-brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.footer-brand-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 380px;
+}
+
+/* Section Headings for Columns 2 & 3 */
+.footer-col-heading {
+  font-family: var(--font-heading);
+  font-size: 0.80rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-brown);
+  margin-bottom: 16px;
+}
+
+/* Column 2: Index Directory Navigation List */
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease, transform 0.2s var(--ease-spring);
+}
+
+.footer-nav-icon {
+  font-size: 0.85rem;
+  color: var(--light-brown);
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: var(--primary-brown);
+  transform: translateX(4px);
+}
+
+.footer-nav-link:hover .footer-nav-icon {
+  color: var(--primary-brown);
+}
+
+/* Column 3: Connect & Network List */
+.footer-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-contact-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.footer-contact-label i {
+  color: var(--primary-brown);
+  font-size: 0.78rem;
+}
+
+.footer-contact-value {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.45;
+}
+
+a.footer-contact-value:hover {
+  color: var(--primary-brown);
+  text-decoration: underline;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  border-top: 1px solid var(--divider-subtle);
+  padding-top: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
   font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-size: 0.80rem;
   color: var(--text-muted);
 }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  list-style: none;
+.footer-tagline {
+  font-size: 0.74rem;
+  color: var(--light-brown);
 }
 
-.footer-link {
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
-}
-
-.footer-link:hover {
-  color: var(--primary-brown);
+@media screen and (max-width: 860px) {
+  .site-footer {
+    padding: 40px 20px 24px 20px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
 /* --------------------------------------------------------------------------
