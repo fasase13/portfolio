@@ -150,16 +150,25 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --------------------------------------------------------------------------
      3. Print / Save as PDF Functionality
      -------------------------------------------------------------------------- */
+  function prepareResumeForPrint() {
+    switchPage('resume');
+    const resumeRoleEl = document.getElementById('typewriter-role');
+    if (resumeRoleEl) {
+      resumeRoleEl.textContent = 'Web Author & Developer';
+    }
+  }
+
   const printButtons = document.querySelectorAll('.print-trigger-btn');
   printButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Ensure we switch to resume view for cleanest print
-      switchPage('resume');
+      prepareResumeForPrint();
       setTimeout(() => {
         window.print();
-      }, 300);
+      }, 250);
     });
   });
+
+  window.addEventListener('beforeprint', prepareResumeForPrint);
 
   /* --------------------------------------------------------------------------
      4. Dynamic Hero Typewriter Cycling Effect
